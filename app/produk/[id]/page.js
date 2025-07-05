@@ -15,8 +15,8 @@ export default function DetailProduk({ params }) {
   return (
     <main className="p-4 max-w-md md:max-w-2xl mx-auto">
       <div className="bg-white p-6 rounded shadow">
-        {/* Gambar produk tampil kotak dan tidak besar */}
-        <div className="w-full max-w-sm mx-auto aspect-square overflow-hidden rounded mb-4">
+        {/* Gambar produk ukuran 3x4 dibatasi */}
+        <div className="w-full max-w-[200px] mx-auto aspect-[3/4] overflow-hidden rounded mb-4 shadow">
           <img
             src={product.image}
             alt={product.name}
@@ -24,14 +24,10 @@ export default function DetailProduk({ params }) {
           />
         </div>
 
-        {/* Informasi Produk */}
         <h1 className="text-2xl font-bold mb-2">{product.name}</h1>
-        <p className="mb-4 text-lg text-gray-700">
-          Rp {product.price.toLocaleString()}
-        </p>
+        <p className="mb-4 text-lg text-gray-700">Rp {product.price.toLocaleString()}</p>
         <p className="text-sm text-gray-600">{product.description}</p>
 
-        {/* Tombol Tambah ke Keranjang */}
         <button className="mt-6 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded w-full">
           Tambah ke Keranjang
         </button>
