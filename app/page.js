@@ -8,7 +8,7 @@ export default function Home() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {products.map((p) => (
           <div key={p.id} className="bg-white p-4 rounded shadow">
-            <img src={p.image} alt={p.name} className="w-full h-40 object-cover mb-2 rounded" />
+            <img src={p.image} alt={p.name} className="w-full aspect-square object-cover rounded-md" />
             <h2 className="font-semibold">{p.name}</h2>
             <p className="text-sm text-gray-500">Rp {p.price.toLocaleString()}</p>
             <Link href={`/produk/${p.id}`} className="block mt-2 text-blue-600">Lihat Detail</Link>
