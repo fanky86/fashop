@@ -10,8 +10,8 @@ export default function Home() {
         {products.map((p) => (
           <div key={p.id} className="bg-white p-3 rounded shadow hover:shadow-md transition">
             
-            {/* Gambar produk tampil persegi (kotak) */}
-            <div className="w-full aspect-square mb-2 overflow-hidden rounded">
+            {/* Gambar produk 3x4 */}
+            <div className="w-full aspect-[3/4] mb-2 overflow-hidden rounded">
               <img
                 src={p.image}
                 alt={p.name}
