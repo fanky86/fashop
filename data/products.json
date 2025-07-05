@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Sepatu Sneakers",
+    "price": 250000,
+    "image": "https://images.unsplash.com/photo-1519744792095-2f2205e87b6f",
+    "description": "Sepatu sneakers keren untuk sehari-hari."
+  },
+  {
+    "id": 2,
+    "name": "Kaos Polos Pria",
+    "price": 50000,
+    "image": "https://images.unsplash.com/photo-1520975698519-59a360b7a8f7",
+    "description": "Kaos polos katun nyaman dipakai."
+  },
+  {
+    "id": 3,
+    "name": "Jam Tangan Digital",
+    "price": 175000,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+    "description": "Jam tangan tahan air dan stylish."
+  }
+]
