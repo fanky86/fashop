@@ -1,7 +1,12 @@
 export default function RootLayout({ children }) {
   return (
     <html lang="id">
-      <body className="bg-gray-100 font-sans">{children}</body>
+      <head />
+      <body className="bg-gray-100 font-sans text-gray-900">
+        <div className="min-h-screen">
+          {children}
+        </div>
+      </body>
     </html>
-  )
+  );
 }
