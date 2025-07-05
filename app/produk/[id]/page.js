@@ -14,13 +14,13 @@ export default function DetailProduk({ params }) {
 
   return (
     <main className="p-4 max-w-md md:max-w-2xl mx-auto">
-      <div className="bg-white p-6 rounded shadow">
-        {/* Gambar produk ukuran 3x4 dibatasi */}
-        <div className="w-full max-w-[200px] mx-auto aspect-[3/4] overflow-hidden rounded mb-4 shadow">
+      <div className="bg-white p-6 rounded shadow text-center">
+        {/* ✅ GAMBAR FIX - tidak tampil besar */}
+        <div className="mx-auto w-full max-w-[160px] aspect-[3/4] overflow-hidden rounded shadow mb-4">
           <img
             src={product.image}
             alt={product.name}
-            className="object-cover w-full h-full"
+            className="w-full h-full object-cover"
           />
         </div>
 
